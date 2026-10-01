@@ -127,7 +127,7 @@ let getAllCategory = async (req,res)=>{
       data: category
   })
 }
-// can get all sub category
+// admin can get all sub category
 let getAllSubCategory = async (req,res)=>{
   let subcategory = await SubCategory.find({}).populate('parentCategory')
   if(!subcategory){
